@@ -35,17 +35,19 @@ public class DziekanatMongoDB {
 		MongoCollection<Document> collection = db.getCollection("dziekanat");
 
 		Scanner scan = new Scanner(System.in);
+		Integer optionMenu;
 
-		System.out.println("\nWitaj w DZIEKANACIE. Wybierz jedną z opcji poniżej.\n");
+		System.out.print("\nWitaj w DZIEKANACIE. Wybierz jedną z opcji poniżej.\n");
+
+	while(true) {
+
+		System.out.println("--------------------------------------------------------------------");
 		System.out.println("1 - Dodawanie studenta.");
 		System.out.println("2 - Aktualizacja danych studenta.");
 		System.out.println("3 - Usuwanie danych studenta.");
 		System.out.println("4 - Wyświetl dane studenta.");
 		System.out.println("5 - WYJŚCIE.");
 
-
-		Integer optionMenu;
-while(true) {
 	System.out.print("Wybierz opcję: ");
 	optionMenu = scan.nextInt();
 
