@@ -10,7 +10,7 @@ public class UpdateStudent extends Student{
                 new Document("$set", new Document("e-mail", "janek@gmail.com"))
         );
         for (Document doc : collection.find())
-            System.out.println("update" + doc.toJson());
+            System.out.println("Zmieniono dane studenta " + doc.toJson());
 
     }
 }

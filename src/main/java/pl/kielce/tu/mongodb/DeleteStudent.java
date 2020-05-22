@@ -8,7 +8,7 @@ public class DeleteStudent extends Student{
 
         collection.deleteOne(eq("_id", 1));
         for (Document doc : collection.find())
-            System.out.println("deleteOne(eq(\"_id\", 1)) " + doc.toJson());
+            System.out.println("Usunięto z bazy studenta o \"_id\" = 1 \n" + doc.toJson());
 
     }
 }
